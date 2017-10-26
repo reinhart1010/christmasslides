@@ -22,18 +22,25 @@
 		</script>
 	</head>
 	<body>
+        <div style="font-family:'Source Sans Pro', sans-serif; color:#ffffff; background: #000000; padding:5px"><a href="#/1" style="color:#71e9f4; font-weight:bold;">Slideshow Demo List</a> | Home</div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown>
 				# Christmas Slides Demonstation
 				## By Reinhart Previano K.
+				
+				Press or swipe left to continue.
 				</section>
 				<section data-markdown>
-				## Contents
+				## Slideshow Demo List
 				
 				+ [Opening (Pre-Event) Slideshow](intro.html)
-				+ [GitHub Repository](https://github.com/reinhart1010/christmasslides)
+				+ [reveal.js Demo Slideshow](demo.html)
+				</section>
+				<section data-markdown>
+				## Other Links
 				
+				+ [GitHub Repository](https://github.com/reinhart1010/christmasslides)
 				</section>
 			</div>
 		</div>
@@ -46,6 +53,14 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
