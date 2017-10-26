@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Christmas Celebration (Intro)</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/christmas.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		
+		<!-- Clock Service -->
+		<script src="js/moment-with-locales.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/moment-timezone-with-data-2012-2022.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body onLoad="updateClock();setInterval('updateClock()',1000);">
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/bg1.jpg" data-markdown>
+                ## Christmas Celebration
+                #### PENABUR Secondary Tanjung Duren
+					
+                December 14&lt;sup&gt;th&lt;/sup&gt;, 2017</p>
+				</section>
+				<!-- &lt; and &gt; are used to replace HTML brackets to override the Markdown parsing engine. -->
+
+                <!-- Clock -->
+				<section>
+				<section data-background="img/bg1.jpg">
+				<h1>Current Time</h1>
+				<h1 id="clock" class="clock"></h1>
+				</section>
+				<section data-background="img/bg1.jpg">
+				<h1>Event will start at</h1>
+				<h1 class="clock">07:00</h1>
+				</section>
+				</section>
+
+				<!-- Notice -->
+				<section>
+				<section data-background="img/bg1.jpg" data-markdown>
+                # ★
+                ### Hello!!!
+                # Please
+                ### Turn Off/Shut Down
+                
+                Your **mobile phones** 
+                
+                and other **electronic devices** too!
+                
+                *Thank you for your help and cooperation.*
+				</section>
+
+				<section data-background="img/bg1.jpg" data-markdown>
+                # ★
+                ### Please
+                ## Keep Silent
+                
+                **Before** and **during** our Christmas Service.
+                
+                *Thank you for your help and cooperation.*
+				</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				autoSlide: 8000,
+				loop: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+                /* multiplex: {
+                    // Example values. To generate your own, see the socket.io server instructions.
+                    secret: '15069210777866842199', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+                    id: '92762689b79c6dd0', // Obtained from socket.io server
+                    url: '127.0.0.1:1948' // Location of your socket.io server
+                }, */
+
+	
+				// More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+                    { src: 'plugin/multiplex/client.js', async: true },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
